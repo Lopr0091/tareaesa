@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>interpolar</ion-title>
+    <ion-back-button>hola</ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-back-button>hola</ion-back-button>
+  <h1>Ejemplo 1: Mostrar el valor de una variable.</h1>
+  <p>La direccion es: {{direccion}}</p>
+  <p>El nombre del cliente es: {{persona.nombre}} {{persona.apellido}}</p>
+  <h1>Ejemplo 2: Evaluar expresiones</h1>
+  <p>El resultado de la suma de 5+5 es: {{5+5}}</p>
+  <h1>Ejemplo 3: Evaluar funciones</h1>
+  <p>El resultado de 5+7 es: {{sumarDosNumeros(5,7)}}</p>
+  <h1>Ejemplo 4: Evaluar funiciones</h1>
+  <p>El siguiente tezto se va a duplicar: {{duplicar('aplicacion')}}</p>
+  <p>Usuario: {{usuarioNombre}}</p>
+<ion-button expand="block" (click)="irLogin()">Ir al login</ion-button>
+<ion-button expand="block"[routerLink]="['/login']">Relleno</ion-button>
+</ion-content>

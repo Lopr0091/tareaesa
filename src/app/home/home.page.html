@@ -1,20 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Toolbar?</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar>q pasa po</ion-searchbar>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button expand="block" (click)="enviarDatos()">Enviar datos</ion-button>
+  <ion-button expand="block" (click)="RemoverDatos()">Borrar datos</ion-button>
+  <h1>Titulo 1</h1>
+  <h2>Titulo 2</h2>
+  <h3>Titulo 3</h3>
+  <h4>Titulo 4</h4>
+  <h5>Titulo 5</h5>
+  <h6>Titulo 6</h6>
+  <p>hola soy homero simpson de los simpson</p>
+  <p>Usuario: {{usuario}}</p>
+  <ion-card>
+    <img alt="emperador" src="assets/descargar.jpeg"/>
+    <ion-card-header>
+      <ion-card-title>Dios</ion-card-title>
+      <ion-card-subtitle>SALVE DIOS EMPERADOR DE LA HUMANIDAD</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      DIOS ETERNOS DE LA HUMANDIAD
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img alt="emperador" src="assets/horus.jpg" style="width: 200px; max-height: 200px;"/>
+    <ion-card-header>
+      <ion-card-title>Horus</ion-card-title>
+      <ion-card-subtitle>MUERTE AL ARCHITRAIDOR</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-select label="Eres leal o hereje?" placeholder="Traidor o leal">
+        <ion-select-option value="1">Dios Emperador</ion-select-option>
+        <ion-select-option value="2">Horus el architraidor</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Pie de pagina</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </ion-footer>
 </ion-content>

@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!--<ion-list *ngIf="datos"> 
+    <ion-item>
+      {{ datos.userId }} <br>
+      {{ datos.title }} <br>
+      {{ datos.body }} <br>
+    </ion-item>
+  </ion-list>-->
+
+  <ion-list *ngFor="let dato of datito">
+    <ion-item>
+      {{ dato.id }} <br>
+      {{ dato.title }} <br>
+      {{dato.body}}
+    </ion-item>
+  </ion-list>
+</ion-content>
